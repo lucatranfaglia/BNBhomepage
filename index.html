@@ -29,7 +29,7 @@
       }
 
       .form-text{
-        background-color:#0000002e;
+        background-color:#0000008c;
         border-radius: 5px;
         margin-top: 20px;
       }
@@ -125,15 +125,23 @@
             <i class="material-icons">menu</i>
           </a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="#servizio">Servizi</a></li>
-            <li><a href="#registrazione">Registrazione</a></li>
-            <li><a href="#ospita">Ospita</a></li>
+            <li>
+              <a class="smooth" href="#servizio">Servizi</a>
+            </li>
+            <li>
+              <a class="smooth" href="#registrazione">Registrazione</a>
+            </li>
+            <li>
+              <a class="smooth" href="#ospita">Ospita</a>
+            </li>
           </ul>
 
           <ul class="sidenav" id="mobile-demo">
-            <li><a href="#servizio">Servizi</a></li>
-            <li><a href="#registrazione">Registrazione</a></li>
-            <li><a href="#ospita">Ospita</a></li>
+            <li>
+              <a class="smooth" href="#servizio">Servizi</a>
+            </li>
+            <li><a class="smooth" href="#registrazione">Registrazione</a></li>
+            <li><a class="smooth" href="#ospita">Ospita</a></li>
           </ul>
           
         </div>
@@ -151,7 +159,7 @@
             <h5 class="header col s12 light">Prenota l'alloggio della tua prossima destinazione</h5>
           </div>
           <div class="row center">
-            <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Scopri come funziona</a>
+            <a href="#ospita" id="download-button" class="smooth btn-large waves-effect waves-light teal lighten-1">Scopri come funziona</a>
           </div>
           <br><br>
 
@@ -354,6 +362,15 @@
               
     <!-- SUMOME -->
     <script async>(function(s,u,m,o,j,v){j=u.createElement(m);v=u.getElementsByTagName(m)[0];j.async=1;j.src=o;j.dataset.sumoSiteId='8676704ad68e3436b7a79ed50a5dc5d4ca54352fe7b926c6806349b3c02713ac';v.parentNode.insertBefore(j,v)})(window,document,'script','//load.sumo.com/');</script>
-    
+    <script>
+      var smooth = [$('a.smooth'), 100, 750];
+
+      smooth[0].click(function() {
+        $('html, body').animate({
+            scrollTop: $('[id="' + $.attr(this, 'href').substr(1) + '"]').offset().top -smooth[1]
+        }, smooth[2]);
+        return false;
+      });
+    </script>
   </body>
 </html>
