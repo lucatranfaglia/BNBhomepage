@@ -1,2 +1,7 @@
 fontawesome/*
+!fontawesome/css/
+fontawesome/css/*
+!fontawesome/css/fontawesome.min.css
+!fontawesome/css/solid.min.css
+!fontawesome/css/brands.min.css
 background*
