@@ -1,4 +1,5 @@
 fontawesome/*
+!fontawesome/webfonts/
 !fontawesome/css/
 fontawesome/css/*
 !fontawesome/css/fontawesome.min.css
