@@ -89,6 +89,13 @@
         background-color: transparent!important;
       }
 
+      .footer-copyright{
+        background-color: #1b8e83 !important;
+      }
+      .brand-logo img {
+          height: 64px;
+      }
+
       @media only screen and (max-width : 600px) {
         .padding-l-50{
           padding-left:10px;
@@ -122,7 +129,9 @@
     <div class="navbar-fixed">
       <nav>
         <div class="nav-wrapper white padding-l-50 padding-r-50">
-          <a href="#" class="brand-logo">Logo</a>
+          <a href="#" class="brand-logo center">
+            <img src="/logo.jpg" />
+          </a>
           <a href="#" data-target="mobile-demo" class="sidenav-trigger">
             <i class="material-icons">menu</i>
           </a>
@@ -225,7 +234,7 @@
                 airplanemode_active
               </i>
               <h3 class="header col s12 light">Sei in cerca della tua prossima destinazione</h3>
-              <h5 class="col s12">Registrati per rimanere aggiornato sul rilascio della versione beta</h5>
+              <h5 class="col s12">Registrati per rimanere aggiornato sulle offerte future.</h5>
               <div class="row">
                 <div class="input-field col s12 offset-l3 l6">
 
@@ -251,7 +260,7 @@
                         </div>
                         <div class="indicates-required light">
                           <p>
-                            <span class="asterisk">*</span> indicates required
+                            <span class="asterisk">*</span> campo obbligatorio
                           </p>
                         </div>
                       </div>
@@ -270,7 +279,8 @@
           </div>
         </div>
         <div class="parallax">
-          <img src="https://images.unsplash.com/photo-1563445192161-e5b340432ff5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" alt="background img 2">
+          <!-- <img src="https://images.unsplash.com/photo-1563445192161-e5b340432ff5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" alt="background img 2"> -->
+          <img src="./background3.jpg" alt="background img 2">
         </div>
       </div>
     </div>
@@ -317,7 +327,7 @@
     -->
 
     <!-- FOOTER -->
-    <footer class="page-footer grey darken-1">
+    <footer class="page-footer teal darken-3">
       <div class="container">
         <div class="row">
           <div class="col l12 s12 center">
@@ -341,8 +351,8 @@
         </div>
       </div>
       <div class="footer-copyright">
-        <div class="container">
-          2020 &copy; <a class="brown-text text-lighten-3" href="" target="_blank">Tranfire</a>
+        <div class="container center">
+          2020 &copy; <a class="white-text text-lighten-3" href="" target="_blank">Tranfire</a>
         </div>
       </div>
     </footer>
